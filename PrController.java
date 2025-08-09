@@ -374,5 +374,9 @@ public class PullRequestServiceImpl implements PullRequestService {
             pullRequestRepository.saveAll(pullRequestsToSave);
             log.info("총 {}개의 PR이 동기화되었습니다.", pullRequestsToSave.size());
         }
+
+                    JsonNode json = objectMapper.readTree(payload);
+            String formattedPayload = objectMapper.writerWithDefaultPrettyPrinter()
+                    .writeValueAsString(json);
     }
 }
