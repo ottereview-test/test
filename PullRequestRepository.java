@@ -29,4 +29,11 @@ public interface PullRequestRepository extends JpaRepository<PullRequest, Long> 
     List<PullRequest> findAllByAuthor(User author);
 
     Optional<PullRequest> findByGithubId(Long githubId);
+
+    List<PullRequest> findAllByRepo(Repo repo);
+
+    List<PullRequest> findAllByAuthor(User author);
+
+    Optional<PullRequest> findByGithubId(Long githubId);
+
 }
