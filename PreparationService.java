@@ -58,7 +58,7 @@ public class PrService {
         return preparationResult;
     }
 
-    public PreparationResult validatePullRequest(CustomUserDetail userDetail, Long repoId, PreparationValidationRequest request) {
+    public PreparationResult validatePullRequests(CustomUserDetail userDetail, Long repoId, PreparationValidationRequest request) {
 
         // 1. 유저 권한 검증
         Repo repo = userAccountService.validateUserPermission(userDetail.getUser()
@@ -93,6 +93,7 @@ public class PrService {
 
         pullRequestRedisService.savePrepareInfo(repoId, preparationResult);
 
+        log.info("여기까지 오는지 테스트")
         return preparationResult;
     }
 
@@ -118,6 +119,7 @@ public class PrService {
                 prepareInfo.enrollReviewers(userInfos);
             }
 
+        log.info("여기까지 오는지 테스트")
             if (request.getSummary() != null && !request.getSummary()
                     .trim()
                     .isEmpty()) {
@@ -139,6 +141,7 @@ public class PrService {
                 prepareInfo.enrollPriorities(request.getPriorities());
             }
 
+        log.info("여기까지 오는지 테스트")
             // 4. Repository에서 저장
             pullRequestRedisService.updatePrepareInfo(repoId, prepareInfo);
 
