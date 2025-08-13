@@ -63,6 +63,7 @@ public class PullRequestServiceImpl implements PullRequestService {
         // 2. 해당 레포지토리의 Pull Request 목록 조회
         List<PullRequest> pullRequests = pullRequestRepository.findAllByRepo(targetRepo);
         
+        log.info("여기까지 오는지 테스트")
         // 3. Pull Request 목록을 DTO로 변환하여 반환
         return pullRequests.stream()
                 .map(pullRequestMapper::PullRequestToResponse)
@@ -70,12 +71,13 @@ public class PullRequestServiceImpl implements PullRequestService {
     }
     
     @Override
-    public List<PullRequestResponse> getPullRequestsByGithub(CustomUserDetail userDetail,
+    public List<PullRequestResㄴnse> getPullRequestsByGithub(CustomUserDetail userDetail,
             Long repoId) {
         
         Repo targetRepo = userAccountService.validateUserPermission(userDetail.getUser()
                 .getId(), repoId);
         
+        log.info("여기까지 오는지 테스트")
         // 2. Repo 엔티티에서 GitHub 저장소 이름과 설치 ID를 가져온다.
         String repositoryFullName = targetRepo.getFullName();
         Long installationId = targetRepo.getAccount()
