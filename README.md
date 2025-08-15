@@ -11,7 +11,10 @@ Hibernate:
         pr1_0.body,
         pr1_0.changed_files_cnt,
         pr1_0.comment_cnt,
-        pr1_0.commit_cnt,
+.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정
         pr1_0.created_at,
         pr1_0.diff_url,
         pr1_0.github_created_at,
@@ -24,16 +27,14 @@ Hibernate:
         pr1_0.mergeable,
         pr1_0.merged,
         pr1_0.modified_at,
-        pr1_0.patch_url,
-        pr1_0.repo_id,
-        pr1_0.review_comment_cnt,
-        pr1_0.state,
-        pr1_0.summary,
-        pr1_0.title 
-    from
-        pull_request pr1_0 
-    where
-        pr1_0.github_id=?
+.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정
 Hibernate: 
     select
         u1_0.id,
@@ -63,13 +64,14 @@ Hibernate:
         r1_0.id,
         r1_0.body,
         r1_0.commit_sha,
-        r1_0.created_at,
-        r1_0.github_created_at,
-        r1_0.github_id,
-        r1_0.modified_at,
-        r1_0.pull_request_id,
-        r1_0.state,
-        r1_0.user_id 
+.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정
     from
         review r1_0 
     where
@@ -95,12 +97,10 @@ Hibernate:
     "pull_request_review_id" : 3090708362,
     "node_id" : "PRRC_kwDOPYZagM6GePXm",
     "diff_hunk" : "@@ -8,18 +8,21 @@ Caused by: org.hibernate.NonUniqueResultException: Query did not return a unique\n \tat org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:298) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]\n \tat org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:281) ~[hibernate-core-6.6.18.Final.jar:6.6.18.Final]\n \tat org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:224) ~[spring-data-jpa-3.5.1.jar:3.5.1]\n-\tat org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:93) ~[spring-data-jpa-3.5.1.jar:3.5.1]\n-\tat org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:160) ~[spring-data-jpa-3.5.1.jar:3.5.1]\n+\t이 두문장은 삭제 되었습니다.\n+\t이 두문장은 삭제 되었습니다.",
-    "commit_id" : "3113ce33f035e10d6db31a8632e119c42274a840",
-    "original_commit_id" : "3113ce33f035e10d6db31a8632e119c42274a840",
-    "created_at" : "2025-08-06T07:05:23",
-    "updated_at" : "2025-08-06T07:05:27",
-    "html_url" : "https://github.com/ottereview/test-kb/pull/10#discussion_r2256074214",
-    "pull_request_url" : "https://api.github.com/repos/ottereview/test-kb/pulls/10",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정
     "author_association" : "COLLABORATOR",
     "start_line" : 12,
     "original_start_line" : 12,
@@ -110,3 +110,8 @@ Hibernate:
     "subject_type" : "line"
   }
 }
+.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정.",
+    수정수정수정수정수정수정수정수정수정수정수정수정
